@@ -1,8 +1,6 @@
 package handler
 
-import (
-	"github.com/TimmyTurner98/project/pkg/service"
-)
+import "github.com/TimmyTurner98/project/pkg/service"
 
 type Handler struct {
 	services *service.Service
