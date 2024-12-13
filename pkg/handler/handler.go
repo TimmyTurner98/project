@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"cmd/main.go/pkg/service"
+	"github.com/TimmyTurner98/project/pkg/service"
 
 	"github.com/gin-gonic/gin"
 )

@@ -1,9 +1,6 @@
 package main
 
 import (
-	"cmd/main.go/pkg/handler"
-	"cmd/main.go/pkg/repository"
-	"cmd/main.go/pkg/service"
 	"context"
 	"os"
 	"os/signal"
@@ -11,8 +8,11 @@ import (
 
 	"github.com/joho/godotenv"
 
-	"cmd/main.go/project"
+	"github.com/TimmyTurner98/project"
 
+	"github.com/TimmyTurner98/project/pkg/handler"
+	"github.com/TimmyTurner98/project/pkg/repository"
+	"github.com/TimmyTurner98/project/pkg/service"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )

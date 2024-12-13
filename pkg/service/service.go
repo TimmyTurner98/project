@@ -1,6 +1,6 @@
 package service
 
-import "cmd/main.go/pkg/repository"
+import "github.com/TimmyTurner98/project/pkg/repository"
 
 type Service struct {
 }
