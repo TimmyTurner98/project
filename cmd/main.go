@@ -1,16 +1,17 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"fmt"
+	"github.com/TimmyTurner98/project/server"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
+	// Создание экземпляра сервера
+	server := &server.Server{}
 
-	})
-	r.Run() // Listen and serve on 0.0.0.0:8080
+	// Запуск сервера на порту 8080
+	err := server.Run("8080")
+	if err != nil {
+		fmt.Printf("Ошибка при запуске сервера: %v\n", err)
+	}
 }
